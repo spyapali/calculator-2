@@ -9,18 +9,24 @@ def add_many(list_of_numbers):
 
 
 
-def subtract(num1, num2):
-    return num1 - num2
+def subtract(list_of_numbers):
+    result = 0
+    for i in list_of_numbers:
+        result = result - i
+    return result
 
 
-def multiply(num1, num2):
-    return num1 * num2
+def multiply(list_of_numbers):
+    result = 0
+    for i in list_of_numbers:
+        result = result * i
+    return result
 
 
 def divide(num1, num2):
+    return float(num1) / float(num2)
     # Need to turn at least argument to float for division to
     # not be integer division
-    return float(num1) / float(num2) 
 
 
 def square(num1):
@@ -37,5 +43,9 @@ def power(num1, num2):
     return num1 ** num2  # ** = exponent operator
 
 
-def mod(num1, num2):
-    return num1 % num2
+def mod(list_of_numbers):
+    result = 0
+    for i in list_of_numbers:
+        result = result % i
+    return result
+    
