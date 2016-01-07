@@ -27,6 +27,12 @@ elif len(user_input) == 2:
     elif operator == "cube":
         print cube(num1)
 
+elif user_input[0] == "power":
+    operator = user_input[0]
+    num1 = float(user_input[1])
+    num2 = float(user_input[2])
+    print power(num1, num2)
+
 
 elif len(user_input) == 3:
     operator = user_input[0]
@@ -42,8 +48,8 @@ elif len(user_input) == 3:
     elif operator == "*":
         print multiply(num1, num2)
 
-    elif operator == "power":
-        print power(num1, num2)
+    # elif operator == "power":
+    #     print power(num1, num2)
 
     elif operator == "/":
         print divide(num1, num2)
